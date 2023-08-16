@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruwudu&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/images/icon.png">
 
-  <!--
-    - primary meta tags
-  -->
   <title>LAMB CHEF</title>
   <meta name="title" content="lamb chef - Amazing & Delicious Food">
   <meta name="description" content="This is a Restaurant html template made by Artisite">
@@ -37,6 +49,29 @@
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
 
+ <!--
+    SCRIPTS
+ -->
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.js"
+ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+ crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/nipYsO0cRW3hnxjZ/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+
 </head>
 
 <body id="top">
@@ -54,61 +89,7 @@
 
 
 
-  <!--
-    - #TOP BAR
 
-  <div class="topbar">
-    <div class="container">
-
-      <address class="topbar-item">
-        <div class="icon">
-          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">
-          Restaurant St, Delicious City, London 9578, UK
-        </span>
-      </address>
-
-      <div class="separator"></div>
-
-      <div class="topbar-item item-2">
-        <div class="icon">
-          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">Daily : 8.00 am to 10.00 pm</span>
-      </div>
-
-      <a href="tel:+11234567890" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">+1 123 456 7890</span>
-      </a>
-
-      <div class="separator"></div>
-
-      <a href="mailto:booking@restaurant.com" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">booking@restaurant.com</span>
-      </a>
-
-    </div>
-  </div>
-
-
-
- -->
-
-
-  <!--
-    - #HEADER
-  -->
 
   <header class="header" data-header>
     <div class="container">
@@ -133,7 +114,14 @@
             <a href="#home" class="navbar-link hover-underline active">
               <div class="separator"></div>
 
-              <span class="span">الرئيسية</span>
+              <span class="span">الصفحة الرئيسية</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">نبذة عنا </span>
             </a>
           </li>
 
@@ -141,52 +129,46 @@
             <a href="#menu" class="navbar-link hover-underline">
               <div class="separator"></div>
 
-              <span class="span">القائمة </span>
+              <span class="span">قائمة الطعام </span>
             </a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">من نحن </span>
-            </a>
-          </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#contact" class="navbar-link hover-underline">
               <div class="separator"></div>
 
-              <span class="span">أتصل بنا </span>
+              <span class="span">تواصل معنا </span>
             </a>
           </li>
 
         </ul>
 
         <div class="text-center">
-          <p class="headline-1 navbar-title">Visit Us</p>
+          <p class="headline-1 navbar-title">مرحبًا بكم </p>
 
           <address class="body-4">
-            Restaurant St, Delicious City, <br>
-            London 9578, UK
+            المملكة العربية السعودية <br> جدة <br> حي أبحر شارع منصور العبدلي <br> ص.ب:756,الرمز البريدي 23436
+
           </address>
 
-          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+          <p class="body-4 navbar-text">  من 12الظهر الى 2 ليلا </p>
 
-          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+          <a href="mailto:info@lambchefsa.com" class="body-4 sidebar-link">info@lambchefsa.com</a>
 
           <div class="separator"></div>
 
-          <p class="contact-label">Booking Request</p>
+          <p class="contact-label">احجز الأن</p>
 
           <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
-            +88-123-123456
+            0126720813
+
           </a>
         </div>
 
       </nav>
 
-      <a href="#" class="btn btn-secondary">
+      <a href="#franshise" class="btn btn-secondary">
         <span class="text text-1">استثمر معنا</span>
 
         <span class="text text-2" aria-hidden="true">استثمر معنا</span>
@@ -198,7 +180,7 @@
         <span class="line line-3"></span>
       </button>
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
+      <div class="overlay" data-nav-toggler data- overlay></div>
 
     </div>
   </header>
@@ -236,7 +218,7 @@
 خروف مشوي يستاهلك
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="#menu" class="btn btn-primary slider-reveal">
               <span class="text text-1">تفقد قائمة الأطباق</span>
 
               <span class="text text-2" aria-hidden="true">تفقد قائمة الأطباق</span>
@@ -272,7 +254,7 @@
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/heroSlider3.jpeg" width="1880" height="950" alt="" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">رائع و لذيذ</p>
@@ -286,7 +268,7 @@
               تمتع بأشهى المقبلات
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="#menu" class="btn btn-primary slider-reveal">
               <span class="text text-1">تفقد قائمة الأطباق</span>
 
               <span class="text text-2" aria-hidden="true">تفقد قائمة الأطباق</span>
@@ -323,9 +305,9 @@
       <section class="section service bg-black-10 text-center" aria-label="service">
         <div class="container">
 
-          <p class="section-subtitle label-2">مرحبًا بك في مطعم الشيف للحم الخروف</p>
+          <p class="section-subtitle label-2">مرحبًا بك في مطعم خروف الشيف</p>
 
-          <h2 class="headline-1 section-title">مرحبًا بكم في عالم النكهات الراقية والتجربة الفريدة في مطعم الشيف للحم الخروف</h2>
+          <h2 class="headline-1 section-title">مرحبًا بكم في عالم النكهات الراقية والتجربة الفريدة في مطعم خروف الشيف</h2>
 
           <p class="section-text">
             نحن ندعوك لتجربة عالمٍ من النكهات المميزة في مطعمنا الذي يختص بتحضير أشهى وألذ وجبات الحم الخروف. يقدم مطعمنا تجربة مذاق لا مثيل لها، حيث نقدم لك أطباقًا مبتكرة وراقية مستوحاة من تقاليد الطهي العربي والعالمي
@@ -349,7 +331,7 @@
                     <a href="#">مقبلات</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">تفقد قائمتنا</a>
+                  <a href="#menu" class="btn-text hover-underline label-2">تفقد قائمتنا</a>
 
                 </div>
 
@@ -372,7 +354,7 @@
                     <a href="#">مشويات</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">تفقد قائمتنا</a>
+                  <a href="#menu" class="btn-text hover-underline label-2">تفقد قائمتنا</a>
 
                 </div>
 
@@ -395,7 +377,7 @@
                     <a href="#">مشروبات</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">تفقد قائمتنا</a>
+                  <a href="#menu" class="btn-text hover-underline label-2">تفقد قائمتنا</a>
 
                 </div>
 
@@ -421,21 +403,27 @@
       -->
 
 
+
+
+
+
       <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <p class="section-subtitle text-center label-2" style="margin-top: -10rem !important;"> نبذة عنا</p>
 
         <div class="container">
 
           <div class="about-content">
 
-            <p class="label-2 section-subtitle" id="about-label"> قصتنا </p>
+            <p class="label-2 section-subtitle" id="about-label"
+          > قصتنا </p>
 
 
             <p class="section-text">
 
-انبعثت فكرة مطعم خروف الشيف من الصفر حيث كان هناك شـابان قومان بشـواء الخروف في الأماكن العامة كهواية ومشاركة الزوار
+انبعثت فكرة مطعم خروف الشيف من الصفر حيث كان هناك شـابان يقومان بشـواء الخروف في الأماكن العامة كهواية ومشاركة الزوار
 والأصدقاء التجارب السعيدة واخذ الانطباعات وبفضل من الله تمكنا من افتتاح أول مطعم في عام 2016 في محافظة جدة وهو مطعم
 مختص بتقديم الخروف المشـوي بالتتبيلة اليونانية ويقدم أصــــناف أخرى من اللحوم والدجاج والطواجن والمشـويات والمشـروبات
-والحلويات وقد أبرمت الشركة بفضل الله عدداً من عقود الامتياز التجاري في عدة مناطق بالمملكة وخارجها            </p>
+.والحلويات وقد أبرمت الشركة بفضل الله عدداً من عقود الامتياز التجاري في عدة مناطق بالمملكة وخارجها            </p>
 
 
 <p class="label-2 section-subtitle" id="about-label"> أهدافنا </p>
@@ -443,7 +431,7 @@
 
             <p class="section-text">
 
-              نسعى جاهدين لتحقيق رؤية المملكة العربية السعودية 2030 من خلال تطوير كفاءة الأفراد والمجتمع وذلك عبر برامج تدريبية متقدمة لضمان رضا العملاء  من خلال تقديم منتجات ذات جودة عالية وتفاصيل محسّنة.أيضا  نلتزم بالمسؤولية الاجتماعية والاستدامة البيئية، ونسعى للتفوق محلياً والتنافس عالمياً من خلال الابتكار والتطوير.</p>
+              نسعى جاهدين لتحقيق رؤية المملكة العربية السعودية 2030 من خلال تطوير كفاءة الأفراد والمجتمع وذلك عبر برامج تدريبية متقدمة لضمان رضا العملاء  من خلال تقديم منتجات ذات جودة عالية وتفاصيل محسّنة.أيضا  نلتزم بالمسؤولية الاجتماعية والاستدامة البيئية، ونسعى للتفوق محلياً والتنافس عالمياً من خلال الابتكار والتطوير</p>
 <p class="label-2 section-subtitle" id="about-label"> قيمنا </p>
 
 
@@ -469,9 +457,14 @@
 
             <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
               <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+
                 class="w-100">
             </div>
 
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/aklyoheboho.jpeg" width="285" height="285" loading="lazy" alt=""
+              class="w-100">
+            </div>
 
 
 
@@ -500,14 +493,13 @@
       <section class="special-dish text-center" aria-labelledby="dish-label">
 
         <div class="special-dish-banner">
-          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+          <img src="./assets/images/aklyoheboho.jpeg" width="940" height="900" loading="lazy" alt="special dish"
             class="img-cover">
         </div>
 
         <div class="special-dish-content bg-black-10">
           <div class="container">
 
-            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
 
             <p class="section-subtitle label-2">خدمات الضيافة و الولائم</p>
 
@@ -519,7 +511,7 @@
             </p>
 
 
-            <a href="#" class="btn btn-primary">
+            <a href="#menu" class="btn btn-primary">
               <span class="text text-1">تفقد قائمة الأطباق  </span>
 
               <span class="text text-2" aria-hidden="true">تفقد قائمة الأطباق  </span>
@@ -545,16 +537,14 @@
       <section class="section menu" aria-label="menu-label" id="menu">
         <div class="container">
 
-          <p class="section-subtitle text-center label-2">Special Selection</p>
+          <p class="section-subtitle text-center label-2"> قائمة الطعام</p>
 
-          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
-          <img src="./assets/images/menu.png" height="3300" width="1200">
+          <h2 class="headline-1 section-title text-center"></h2>
 
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View All Menu</span>
+          <img src="./assets/images/menu.png" height="3300" width="1200" class="menu-image">
 
-            <span class="text text-2" aria-hidden="true">View All Menu</span>
-          </a>
+
+
 
           <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
             class="shape shape-2 move-anim">
@@ -604,45 +594,49 @@
 
 
       <!--
+        - #contact
+      -->
+<!--
         - #RESERVATION
       -->
 
       <section class="reservation" id="contact">
+        <div id="notification" class="notification"></div>
         <div class="container">
 
           <div class="form reservation-form bg-black-10">
 
-            <form action="" class="form-left">
+              <form action="" class="form-left">
 
-              <h2 class="headline-1 text-center">تواصل معنا</h2>
+                <h2 class="headline-1 text-center">تواصل معنا</h2>
 
-              <p class="form-text text-center">
-                إتصل بنا على الرقم  <a href="tel:0126720813 " class="link"> 0126720813 </a>
-                أو دع لنا رسالتك هنا
-              </p>
+                <p class="form-text text-center">
+                  إتصل بنا على الرقم  <a href="tel:0126720813 " class="link"> 0126720813 </a>
+                  أو دع لنا رسالتك هنا
+                </p>
 
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="الإسم" autocomplete="off" class="input-field">
+                <div class="input-wrapper">
+                  <input type="text" name="nameR" placeholder="الإسم و اللقب" autocomplete="off" class="input-field">
 
-                <input type="tel" name="phone" placeholder="رقم الهاتف" autocomplete="off" class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-
+                  <input type="tel" name="phoneR" placeholder="رقم الهاتف" autocomplete="off" class="input-field">
                 </div>
-                <input type="tel" name="phone" placeholder="  البريد الإلكتروني " autocomplete="off" class="input-field">
+
+                <div class="input-wrapper">
+
+                  </div>
+                  <input type="email" name="emailR" placeholder="  البريد الإلكتروني " autocomplete="off" class="input-field">
 
 
 
-              <textarea name="message" placeholder="الرسالة" autocomplete="off" class="input-field"></textarea>
+                <textarea name="messageR" placeholder="الرسالة" autocomplete="off" class="input-field"></textarea>
 
-              <button type="submit" class="btn btn-secondary">
-                <span class="text text-1"> بعث الرسالة</span>
+                <button type="submit" onclick='SubForm()' class="btn btn-secondary">
+                  <span class="text text-1"> بعث الرسالة</span>
 
-                <span class="text text-2" aria-hidden="true"> بعث الرسالة </span>
-              </button>
+                  <span class="text text-2" aria-hidden="true"> بعث الرسالة </span>
+                </button>
 
-            </form>
+              </form>
 
             <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
 
@@ -657,8 +651,8 @@
               <p class="contact-label">الموقع</p>
 
               <address class="body-4">
-                 <br>
-                 المملكة العربية السعودية - جدة - حي أبحر شارع منصور العبدلي - ص.ب:756,الرمز البريدي 23436
+                <br>
+                المملكة العربية السعودية - جدة - حي أبحر شارع منصور العبدلي - ص.ب:756,الرمز البريدي 23436
 
               </address>
 
@@ -671,6 +665,188 @@
       </section>
 
 
+      <br><br><br>
+
+
+
+
+
+
+
+
+      <!-- #investment -->
+      <section class="section about text-center" style="margin-bottom:-3cm; margin-top: -1cm;" aria-labelledby=" about-label" id="about">
+        <p class="section-subtitle text-center label-2" style="margin-top: -10rem !important;"> طلب إمتياز تجاري </p>
+      </section>
+      <section class="special-dish text-center" aria-labelledby="dish-label" id="franshise">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/estathmer.jpeg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+
+            <p class="section-subtitle label-2">استثمر الأن مع سلسة مطاعم خروف الشيف</p>
+
+            <h2 class="headline-1 section-title">اكل يحبه قلبك </h2>
+
+            <p class="section-text">
+              <span class="text text-1">سلسلة مطاعم خروف الشــــيف هي إحدى العلامات التجارية الرائدة في المملكة العربية السعودية ودول الخليح و التي تمتلك خبرة تتجاوز 7 أعوام في مجال المأكوكت الشعبية تنتشر المؤسسة في كافة أنحاء المملكة العربية السعودية من 14 فرعا ولكن هذا ليس منتهى افاقنا فنحن نتطلع إلى إنشاء فروع جديدة عبر منح الامتياز التجاري لعلمة خروف الشـــيف للمستثمرين المتطلعين للـنتشار سد حاجات السوق في منطقة الخليج و من ثم التمدد نحو الأسواق العربية و العالمية لتحقيق رؤية المؤسسة في أن تكون الجهة الرائدة في تقديم الخروف المشوي على الفحم بالتتبيل اليوناني 9 إعداد الأكل الشعبي الأصيل بخلطة سرية عالية الجودة وطعم يضمن العميل التزاما منا تجاه مجتمعنا فقد 9ضعنا نظام الـمتياز التجاري بحيث يساعد في إيجاد فرص عمل للشباب من خال برنامج المالك المشغل الذي يساعد الشباب من ذوي رؤ9س الأموال البسيطة للعمل في المتياز التجاري 9 حياتهم بأقل المناطر من خلال التدريب و التشغيل و المساهمة وطنيـــ في خلق فرص اقتصاديـــ في رؤية الحك9مـــ  </span>
+                </p>
+
+
+            <a href="/assets/files/Franchise.pdf" download="invest with lambchef franchise.pdf" class="btn btn-primary" >
+              <span class="text text-1" aria-hidden="true">المزيد من المعلومات  </span>
+
+              <span class="text text-2" aria-hidden="true">المزيد من المعلومات  </span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+      <br><br><br><br><br><br>
+
+      <section class="section features text-center" aria-label="features" >
+        <div class="container">
+
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-employees.png" width="110" height="90" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">موظـف  </h3>
+
+                <p class="label-1 card-text num " data-val="220" style="font-size: 6rem;"  > 000</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-franchises.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">  عدد الفروع </h3>
+
+                <p class="label-1 card-text num" style="font-size: 6rem;" data-val="36"> 00  </p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icon-locals.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title"> منتشرون غي الخليج العربي </h3>
+
+                <p class="label-1 card-text num " data-val="8" style="font-size: 6rem;" >00
+                </p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/reviews-icon.png" width="122" height="100" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title"> تقــيم ممتاز   </h3>
+
+                <p class="label-1 card-text num" val="4000" style="font-size: 6rem;" >+0000 </p>
+
+              </div>
+            </li>
+
+
+
+
+          </ul>
+
+
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <br><br><br><br>
+
+      <br>
+      <section class="reservation" id="contact">
+        <div id="notification" class="notification"></div>
+        <div class="container">
+
+          <div class="form reservation-form bg-black">
+
+              <form action="" class="form-left">
+<br>
+                <h2 class="headline-1 text-center"> لِلْحُصُولِ عَلَى اَلْعَلَّامَةِ اَلتِّجَارِيَّةِ</h2>
+
+                <p class="form-text text-center">
+                  إتصل بنا على الرقم  <a href="tel:0126720813 " class="link"> 0126720813 </a>
+                  أو دع لنا رسالتك هنا
+                </p>
+
+                <div class="input-wrapper">
+                  <input type="text" name="name" placeholder=" الإسم و اللقب " autocomplete="off" class="input-field">
+
+                  <input type="tel" name="phone" placeholder="رقم الهاتف" autocomplete="off" class="input-field">
+
+                  <input type="text" name="phone" placeholder="المدينة التي ترغب في الحصول على امتياز فيها " autocomplete="off" class="input-field">
+
+                  <input type="number" name="phone" placeholder="عدد الفروع المطلوبة " autocomplete="off" class="input-field">
+
+
+                </div>
+
+                <div class="input-wrapper">
+
+                  </div>
+                  <input type="email" name="email" placeholder="  البريد الإلكتروني " autocomplete="off" class="input-field">
+
+
+
+                <textarea name="message" placeholder="هل يوجد لديك خبرة سابقة في المجال التجاري؟" autocomplete="off" class="input-field"></textarea>
+
+                <textarea name="message" placeholder="هل سبق وأن حصلت على امتياز تجاري؟ " autocomplete="off" class="input-field"></textarea>
+
+
+                <button type="submit" onclick='SubForm()' class="btn btn-secondary">
+                  <span class="text text-1"> بعث الرسالة</span>
+
+                  <span class="text text-2" aria-hidden="true"> بعث الرسالة </span>
+                </button>
+
+              </form>
+
+
+
+          </div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=14jR9q4l7o2CB2DgFcrkr7zvz9Q5qysA&ehbc=2E312F" width="400" height="auto"></iframe>
+
+        </div>
+      </section>
 
 
 
@@ -683,7 +859,6 @@
 
           <p class="section-subtitle label-2">  لماذا عليك إختيارنا ؟ </p>
 
-          <h2 class="headline-1 section-title"> قوتنا</h2>
 
           <ul class="grid-list">
 
@@ -691,12 +866,12 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-1.png" width="110" height="90" loading="lazy" alt="icon">
                 </div>
 
-                <h3 class="title-2 card-title">Hygienic Food</h3>
+                <h3 class="title-2 card-title">خدمة التوصيل  </h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">نحن نقدم خدمة التوصيل لنجعل تجربة تناول الطعام أكثر راحة وسهولة بالنسبة لك مهما كانت موقعك، يمكنك الاستمتاع بأشهى وجباتنا دون الحاجة للخروج من منزلك,يمكنك طلب مجموعة متنوعة من الأطعمة اللذيذة والتمتع بها حيثما كنت</p>
 
               </div>
             </li>
@@ -708,9 +883,9 @@
                   <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
                 </div>
 
-                <h3 class="title-2 card-title">Fresh Environment</h3>
+                <h3 class="title-2 card-title"> البيئة الهادئة والمنعشة </h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">يعتبر مطعمنا مكانًا خاصًا حيث يجتمع الطعام اللذيذ مع البيئة الهادئة والمنعشة، مما يخلق تجربة تناول طعام لا تُنسى,يتميز مطعمنا بتصميم يشجع على الاسترخاء والتواصل، حيث يمكنك الاستمتاع بتناول وجبتك في جو يشع بالحيوية والانتعاش </p>
 
               </div>
             </li>
@@ -740,15 +915,13 @@
 
                 <h3 class="title-2 card-title">خدمات الضيافة و الولائم</h3>
 
-                <p class="label-1 card-text">تقدم شركة خروف الشيف مجموعة متنوعة من خدمات الضيافة و إعداد الولائم و الحفلات للشركات الشخصيات بأعلى ميتويات الجودة سواء للحفلات الصغيرة و الخاصة أو للإحتفالات و المناسبات الكبيرة و العامة</p>
+                <p class="label-1 card-text" id="customP">تقدم شركة خروف الشيف مجموعة متنوعة من خدمات الضيافة و إعداد الولائم و الحفلات للشركات الشخصيات بأعلى ميتويات الجودة سواء للحفلات الصغيرة و الخاصة أو للإحتفالات و المناسبات الكبيرة و العامة</p>
 
               </div>
             </li>
 
           </ul>
 
-          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
-            class="shape shape-1">
 
           <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
             class="shape shape-2">
@@ -760,96 +933,6 @@
 
 
 
-      <!--
-        - #EVENT
-      -->
-
-      <section class="section event bg-black-10" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle label-2 text-center">Recent Updates</p>
-
-          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View Our Blog</span>
-
-            <span class="text text-2" aria-hidden="true">View Our Blog</span>
-          </a>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
 
 
 
@@ -859,118 +942,122 @@
   -->
 
   <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
-    <div class="container">
+  style="background-image: url('./assets/images/footer-bg.jpg')">
+  <div class="container">
 
-      <div class="footer-top grid-list">
+    <div class="footer-top grid-list">
 
-        <div class="footer-brand has-before has-after">
+      <div class="footer-brand has-before has-after">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
-          </a>
+        <a href="#" class="logo">
+          <img src="./assets/images/LogoLambChef-removebg-preview.png" width="160" height="50" loading="lazy" alt="Loading home">
+        </a>
 
-          <address class="body-4">
-            Restaurant St, Delicious City, London 9578, UK
-          </address>
+        <address class="body-4">
+          المملكة العربية السعودية - جدة - حي أبحر شارع منصور العبدلي - ص.ب:756,الرمز البريدي 23436
+        </address>
 
-          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+        <a href="mailto:info@lambchefsa.com" class="body-4 contact-link">info@lambchefsa.com</a>
 
-          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +88-123-123456</a>
+        <a href="tel:0126720813" class="body-4 contact-link"> 0126720813: الهاتف</a>
 
-          <p class="body-4">
-            Open : 09:00 am - 01:00 pm
-          </p>
-
-          <div class="wrapper">
-            <div class="separator"></div>
-            <div class="separator"></div>
-            <div class="separator"></div>
-          </div>
-
-          <p class="title-1">Get News & Offers</p>
-
-          <p class="label-1">
-            Subscribe us & Get <span class="span">25% Off.</span>
-          </p>
-
-          <form action="" class="input-wrapper">
-            <div class="icon-wrapper">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">
-              <span class="text text-1">Subscribe</span>
-
-              <span class="text text-2" aria-hidden="true">Subscribe</span>
-            </button>
-          </form>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <p class="copyright">
-          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-            target="_blank" class="link">codewithsadee</a>
+        <p class="body-4">
+          12:00 am - 02:00 pm
         </p>
 
+        <div class="wrapper">
+          <div class="separator"></div>
+          <div class="separator"></div>
+          <div class="separator"></div>
+        </div>
+
+        <p class="title-1">تابع الأخبار والعروض</p>
+
+        <p class="label-1">
+           <span class="span"></span>
+        </p>
+
+        <form action="" class="input-wrapper">
+          <button type="submit" class="btn btn-secondary">
+            <span class="text text-1">تسجيل</span>
+
+            <span class="text text-2" aria-hidden="true">تسجيل</span>
+          </button>
+          <div class="icon-wrapper">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <input type="email" name="email_address" placeholder=" البريد الإلكتروني" autocomplete="off" class="input-field">
+          </div>
+
+
+        </form>
+
       </div>
 
+      <ul class="footer-list">
+
+        <li>
+          <a href="#home" class="label-2 footer-link hover-underline">الصفحة الرئيسية</a>
+        </li>
+
+        <li>
+          <a href="#about" class="label-2 footer-link hover-underline">نبذة عنا</a>
+        </li>
+
+        <li>
+          <a href="#menu" class="label-2 footer-link hover-underline">
+            قائمة الطعام</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="label-2 footer-link hover-underline">تواصل معنا </a>
+        </li>
+
+        <li>
+          <a href="#franshise" class="label-2 footer-link hover-underline">استثمر معنا</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100095344295489" target="_blank" class="label-2 footer-link hover-underline">Facebook</a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/lamb_chef/" target="_blank" class="label-2 footer-link hover-underline">Instagram</a>
+        </li>
+
+        <li>
+          <a href="https://web.whatsapp.com/send?phone=962792666640" target="_blank" class="label-2 footer-link hover-underline">WhatsApp</a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/@lamb_chef183" target="_blank" class="label-2 footer-link hover-underline">Youtube</a>
+        </li>
+
+        <li>
+          <a href="https://www.google.com/maps/place/%D9%85%D8%B7%D8%B9%D9%85+%D8%AE%D8%B1%D9%88%D9%81+%D8%A7%D9%84%D8%B4%D9%8A%D9%81%E2%80%AD/@21.5821282,39.2068507,17z/data=!3m1!4b1!4m6!3m5!1s0x15c3d1121270ec3b:0x287a479b840f67b4!8m2!3d21.5821282!4d39.2068507!16s%2Fg%2F11g0gwptv2?hl=ar-SA&entry=ttu" target="_blank" class="label-2 footer-link hover-underline">Google Map</a>
+        </li>
+
+      </ul>
+
     </div>
-  </footer>
+
+    <div class="footer-bottom">
+
+      <p class="copyright">
+        &copy; 2023 Ben Mansoor Riyadh. All Rights Reserved | Crafted by <a href="https://www.facebook.com/artisite"
+          target="_blank" class="link">ARTISITE</a>
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+
+
 
 
 
